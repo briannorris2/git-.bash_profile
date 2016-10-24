@@ -1,7 +1,5 @@
 # git-.bash_profile
 
-# git-.bash_profile
-
 SHEERID_TOOLS_HOME=$HOME/Documents/SheerID/projects/sheerid-tools
 export PYTHONPATH=$SHEERID_TOOLS_HOME/lib/sheerid-python/sheerid
 export PATH=$PATH:$SHEERID_TOOLS_HOME/bin
