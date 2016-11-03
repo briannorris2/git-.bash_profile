@@ -1,5 +1,3 @@
-# git-.bash_profile
-
 SHEERID_TOOLS_HOME=$HOME/Documents/SheerID/projects/sheerid-tools
 export PYTHONPATH=$SHEERID_TOOLS_HOME/lib/sheerid-python/sheerid
 export PATH=$PATH:$SHEERID_TOOLS_HOME/bin
@@ -13,10 +11,8 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PS1='\[\e[0;33m\]\h:\W \u\$\[\e[m\] '
 
-## maven
+### maven
 alias mci='mvn -T 1C -DskipTests=true clean install'
-
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 alias ll='ls -lG'
 
