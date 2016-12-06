@@ -1,11 +1,10 @@
-SHEERID_TOOLS_HOME=$HOME/Documents/SheerID/projects/sheerid-tools
 export PYTHONPATH=$SHEERID_TOOLS_HOME/lib/sheerid-python/sheerid
 export PATH=$PATH:$SHEERID_TOOLS_HOME/bin
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin
 export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=512m"
-export SHEERID_ITEST_HOSTNAME=${USER}.sheerid.dev
-export SHEERID_ITEST_VERIFY_HOSTNAME=${USER}-verify.sheerid.dev
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -20,7 +19,7 @@ alias today='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
 
 alias prettyjson='python -m json.tool'
 
-source ~/tools/git-prompt.sh
+source ~/.git-prompt.sh
 
 alias generate_bundle='php app/console generate:bundle --format=yml --namespace='
 alias clearcache='php app/console cache:clear --env=prod --no-debug'
@@ -129,6 +128,5 @@ else \
   # @2 - Prompt when not in GIT repo
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
-
 
 
