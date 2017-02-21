@@ -1,5 +1,6 @@
 export PYTHONPATH=$SHEERID_TOOLS_HOME/lib/sheerid-python/sheerid
 export PATH=$PATH:$SHEERID_TOOLS_HOME/bin
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin
 export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=512m"
